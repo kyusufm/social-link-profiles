@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Inter'; /* Specify the desired font name */
+    src: local('Inter'), url('../fonts/static/Inter-Regular.ttf') format('truetype'); /* Use local and provide the path to the font file */
+  } 
+
+@font-face {
+font-family: 'Inter-Bold';
+src: local('Inter-Bold'), url('../fonts/static/Inter-Semibold.ttf') format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+
+body {
+    font-family: Inter;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    width: 280px;
+    border-radius: 12px;
+    padding: 2em;
+    background-color: hsl(0, 0%, 12%);
+    text-align: center;
+}
+
+ .avatar {
+    width: 80px; 
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%; /* Create a circular shape */
+    margin: 0 auto;
+}
+
+/* Styles for the image */
+.avatar-image {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+/* typography */
+.title {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+.subtitle{
+    font-size: 14px;
+    margin-top: 0;
+    color: hsl(75, 94%, 57%);
+}
+
+.description {
+    padding: 14px 0px;
+}
+
+.button {
+    font-family: "Inter-Bold";
+    width: 100%;
+    padding: 12px 0px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    background-color: hsl(0, 0%, 20%);
+    font-weight: 400;
+    text-decoration: none;
+    
+}
+
+.button a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    width:fit-content;
+}
